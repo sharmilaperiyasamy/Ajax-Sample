@@ -45,7 +45,7 @@ makePromiseCall("GET", getURL, true)
     }).catch(error => console.log("Get Error Status " + JSON.stringify(error)));
 console.log("Made GET AJAX call to server at " + showTime());
 
-const deleteURL = "http://localhost:3000/employees/12";
+const deleteURL = "http://localhost:3000/employees/4";
 
 makePromiseCall("DELETE", deleteURL, false) 
     .then(responseText =>{
