@@ -39,7 +39,7 @@ function getUserDetails(data){
 makeAJAXCall("GET", getURL, getUserDetails, true);
 console.log("Made GET AJAX call to server at " + showTime());
 
-const deleteURL = "http://localhost:3000/employees/12";
+const deleteURL = "http://localhost:3000/employees/4";
 function deleteUserDetails(data){
     console.log("Delete User Data at : " + showTime() + " Data: " + data);
 }
@@ -47,7 +47,7 @@ makeAJAXCall("DELETE", deleteURL, deleteUserDetails, false);
 console.log("Made DELETE AJAX call to server at " + showTime());
 
 const postURL = "http://localhost:3000/employees";
-const employeeData = {"name":"Harinika", "salary":"28000"}
+const employeeData = {"name":"Harinikashree", "salary":"25000"}
 function addUser(data){
     console.log("Post User Data at : " + showTime() + " Data: " + data);
 }
